@@ -80,6 +80,12 @@ var Feeds = []FeedConfig{
 		Agent:           "bot",
 		EnhancedHeaders: false,
 	},
+	{
+		URL:             "https://huggingface.co/blog/feed.xml",
+		Header:          "Hugging Face",
+		Agent:           "bot",
+		EnhancedHeaders: false,
+	},
 	// {
 	// 	URL:             "https://www.propublica.org/feeds",
 	// 	Header:          "ProPublica",
@@ -98,12 +104,12 @@ var Feeds = []FeedConfig{
 	// 	Agent:           "bot",
 	// 	EnhancedHeaders: false,
 	// },
-	{
-		URL:             "https://www.washingtonpost.com/arcio/rss/category/world/",
-		Header:          "Washington Post",
-		Agent:           "chrome",
-		EnhancedHeaders: true,
-	},
+	// {
+	// 	URL:             "https://www.washingtonpost.com/arcio/rss/category/world/",
+	// 	Header:          "Washington Post",
+	// 	Agent:           "chrome",
+	// 	EnhancedHeaders: true,
+	// },
 	// {
 	// 	URL:             "https://www.washingtonpost.com/arcio/rss/category/politics/",
 	// 	Header:          "Washington Post",

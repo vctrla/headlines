@@ -319,8 +319,8 @@ func runParsers(ctx context.Context, db *dynamodb.Client) error {
 }
 
 func logic(ctx context.Context) error {
-	if !shouldRunNow() {
-		logger.Info("Skipping run: not in allowed hours")
+	if os.Getenv("TARGET") == "email" && !shouldRunNow() {
+		logger.Info("Skipping run: not in allowed hours for email target")
 		return nil
 	}
 

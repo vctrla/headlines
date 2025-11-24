@@ -93,7 +93,7 @@ func SendToTelegram(posts []typesPkg.MainStruct, botToken, channelID string) err
 		}
 
 		if i < len(posts)-1 {
-			time.Sleep(1500 * time.Millisecond)
+			time.Sleep(1100 * time.Millisecond)
 		}
 	}
 	return nil
